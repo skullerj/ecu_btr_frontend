@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+  <% include ../partials/nav.ejs %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1>Gracias por hacer del Ecuador un lugar mejor!</h1>
+    <p>Utiliza esta herramienta para consultar tus ganancias</p>
+    <form action="/rewards" method="get" class="row">
+      <div class="col-xs-4 col-xs-push-3">
+        <label for="idInput">Número de cédula</label>
+        <input type="text" class="form-control" name="id" id="idInput">
+      </div>
+      <div class="col-xs-1 col-xs-push-3">
+        <br>
+        <button type="submit" class="btn btn-primary">Consultar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

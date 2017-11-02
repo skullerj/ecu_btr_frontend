@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+  <% include ../partials/nav.ejs %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1>Hola <%=data.id%></h1>
+    <p>Tu saldo es de: <%=data.total%> $</p>
+    <br>
+    <a href="/">
+      <button type="submit" class="btn btn-primary">Regresar</button>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
